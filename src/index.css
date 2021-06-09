@@ -86,3 +86,27 @@ input[type=search] {
   width: 100%;
   padding: 5px;
 }
+
+@media only screen and (max-width: 414px) {
+  /* For mobile phones: */
+  .game-cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .side-content{
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    margin-top: 31px;
+    padding: 5px;
+  }
+  .main-content{
+    width: 100%;
+    padding-left: 32%;
+  }
+
+}
