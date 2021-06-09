@@ -1,13 +1,88 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px auto;
+  max-width: 90%;
+  color: gray;
+}
+.header {
+  text-align: center;
+}
+.header h2{
+  color: #fff;
+  text-shadow: 2px 2px 5px green;
+}
+
+.side-content{
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  background-color: #f0f0f0;
+  color: black;
+  margin-top: 31px;
+  padding: 20px;
+}
+.main-content{
+  width: 100%;
+  padding-left: 23%;
+}
+.game-cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.game-card {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 20px solid tomato;
+  padding-bottom: 20px;
+}
+.game-card img {
+  width: 100%;
+  height: auto;
+}
+.loading {
+  text-align: center;
+  margin: 15% auto;
+}
+.search-div{
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type=search] {
+  width: 40%;
+  padding: 12px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  text-align: center;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+.group-filter{
+  margin-top: 12px;
+}
+#group{
+  width: 100%;
+  padding: 5px;
+}
+.level-filter{
+  margin-top: 12px;
+}
+#level{
+  width: 100%;
+  padding: 5px;
 }
