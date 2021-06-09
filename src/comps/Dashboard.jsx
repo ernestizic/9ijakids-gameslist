@@ -12,7 +12,7 @@ const Dashboard = () => {
     useEffect(()=> {
         const fetchGames = async ()=> {
             setIsLoading(true)
-            const res = await fetch(`http://bit.ly/TeaserTask`)
+            const res = await fetch(`https://cors.bridged.cc/http://bit.ly/TeaserTask`)
             const data = await res.json();
             console.log(data);
             setGames(data);
